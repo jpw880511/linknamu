@@ -12,8 +12,8 @@ export type Profile = {
 
 export const profile: Profile = {
   name: "정평화",
-  bio: "세계 최강 바이브코더",
-  imageUrl: "https://i.pravatar.cc/300?img=12", // 더미 사진
+  bio: "풀스택 개발자 | 요즘에는 AI 개발에 관심이 많아요",
+  imageUrl: "https://placehold.co/150x150/orange/white",
 };
 
 export const links: LinkItem[] = [

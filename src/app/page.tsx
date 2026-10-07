@@ -4,9 +4,9 @@ import { links, profile } from "@/data/profile";
 
 export default function Home() {
   return (
-    <main className="mx-auto flex w-full max-w-md flex-1 flex-col gap-8 px-5 py-12">
+    <main className="mx-auto flex w-full max-w-md flex-1 flex-col gap-10 px-6 py-16 sm:py-20">
       <ProfileHeader {...profile} />
-      <ul className="flex flex-col gap-3">
+      <ul className="flex flex-col gap-4">
         {links.map((link) => (
           <li key={link.id}>
             <LinkCard {...link} />

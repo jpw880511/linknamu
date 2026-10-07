@@ -1,26 +1,21 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fff7ee;
+  --foreground: #3a2e28;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: "Pretendard Variable", Pretendard, system-ui, sans-serif;
 }
 
 body {
-  background: var(--background);
+  min-height: 100vh;
+  background: linear-gradient(160deg, #fffaf2 0%, #ffeedd 55%, #ffdcc2 100%)
+    fixed;
   color: var(--foreground);
-  font-family: var(--font-sans), system-ui, sans-serif;
+  font-family: var(--font-sans);
+  letter-spacing: -0.01em;
 }

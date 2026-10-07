@@ -8,18 +8,20 @@ export default function ProfileHeader({ name, bio, imageUrl }: Profile) {
         <img
           src={imageUrl}
           alt={`${name} 프로필 사진`}
-          className="h-28 w-28 rounded-full object-cover shadow-md"
+          width={150}
+          height={150}
+          className="h-[150px] w-[150px] rounded-full object-cover ring-4 ring-white/80 shadow-[0_12px_32px_rgba(180,100,50,0.25)]"
         />
       ) : (
         <div
           aria-label={`${name} 프로필 사진`}
-          className="flex h-28 w-28 items-center justify-center rounded-full bg-emerald-600 text-4xl font-bold text-white shadow-md"
+          className="flex h-[150px] w-[150px] items-center justify-center rounded-full bg-orange-400 text-4xl font-bold text-white ring-4 ring-white/80 shadow-[0_12px_32px_rgba(180,100,50,0.25)]"
         >
           {name.charAt(0)}
         </div>
       )}
-      <h1 className="mt-4 text-xl font-bold">{name}</h1>
-      <p className="mt-1 text-sm text-foreground/70">{bio}</p>
+      <h1 className="mt-6 text-2xl font-bold tracking-tight">{name}</h1>
+      <p className="mt-2 text-sm leading-relaxed text-foreground/60">{bio}</p>
     </header>
   );
 }
